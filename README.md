@@ -1,13 +1,15 @@
 ### expect
 
 1. build dir structure like this:
--- storybook-static
- |-- demo(project name)
-    | -- favicon.ico
-    | -- project.json
-    | -- stories.json
-    | -- index.html
-    | -- ...
+```
+-- storybook-static  
+ |-- demo(project name)  
+    | -- favicon.ico  
+    | -- project.json  
+    | -- stories.json  
+    | -- index.html  
+    | -- ...  
+```
 
 2. In storybook-static dir, exec static-server command.
 ```
