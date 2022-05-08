@@ -9,6 +9,6 @@ stories.forEach((moduleName) => {
   const { pkgDir } = getModuleInfo(moduleName);
   const { outDir } = getOutDir(moduleName);
   const pkgConfig = path.join(pkgDir, ".storybook");
-  const buildCommand = `npx build-storybook -c ${pkgConfig} -o ${outDir}`;
+  const buildCommand = `npx build-storybook -c ${pkgConfig} -o ${outDir} --preview-url /components/iframe.html --force-build-preview`;
   cp.execSync(buildCommand, { stdio: "inherit", cwd: pkgDir });
 });
